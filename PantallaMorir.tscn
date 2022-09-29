@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://COMFORTAA-REGULAR.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Boton.gd" type="Script" id=2]
+[ext_resource path="res://COMFORTAA-LIGHT.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Botton_salida.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+use_mipmaps = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="PantallaMorir" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_right = 1032.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "
+      Has hecho la
+	      morición."
+readonly = true
+
+[node name="Reiniciar" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 386.0
+margin_bottom = 512.0
+custom_fonts/font = SubResource( 2 )
+text = "Reiniciar"
+script = ExtResource( 2 )
+
+[node name="Salir" type="Button" parent="."]
+margin_left = 640.0
+margin_top = 384.0
+margin_right = 832.0
+margin_bottom = 512.0
+custom_fonts/font = SubResource( 3 )
+text = "Salir"
+script = ExtResource( 4 )
+
+[connection signal="pressed" from="Reiniciar" to="Reiniciar" method="_on_Reiniciar_pressed"]
+[connection signal="pressed" from="Salir" to="Salir" method="_on_Salir_pressed"]

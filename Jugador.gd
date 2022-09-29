@@ -18,3 +18,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		vel.y -= salto
 		
+
+
+func _on_ZonaMorir_body_entered(body):
+	get_tree().change_scene("res://PantallaMorir.tscn")
