@@ -1,0 +1,21 @@
+{
+	"color": "#ff7419e3",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1666274356.json",
+	"mirror_portraits": false,
+	"name": "Jugador",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://icon.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
